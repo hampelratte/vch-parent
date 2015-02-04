@@ -18,7 +18,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <felix.main.version>4.4.1</felix.main.version>
+        <felix.main.version>4.6.0</felix.main.version>
     </properties>
 
     <developers>
@@ -135,13 +135,13 @@
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.ipojo.annotations
                 </artifactId>
-                <version>1.6.2</version>
+                <version>1.8.4</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.ipojo</artifactId>
-                <version>1.6.2</version>
+                <version>1.8.4</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -153,7 +153,7 @@
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.log</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.1</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -167,7 +167,7 @@
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.bundlerepository
                 </artifactId>
-                <version>1.6.4</version>
+                <version>2.0.2</version>
                 <scope>runtime</scope>
             </dependency>
             <dependency>
@@ -267,7 +267,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-ipojo-plugin</artifactId>
-                <version>1.6.0</version>
+                <version>1.8.6</version>
                 <executions>
                     <execution>
                         <goals>
@@ -282,20 +282,25 @@
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-ssh</artifactId>
-                <version>1.0-beta-7</version>
+                <version>2.8</version>
             </extension>
         </extensions>
         <pluginManagement>
-        	<plugins>
-        		<plugin>
-        			<groupId>org.apache.felix</groupId>
-        			<artifactId>maven-bundle-plugin</artifactId>
-        			<version>2.3.7</version>
-        		</plugin>
-        	</plugins>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>2.3.7</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.5.3</version>
+                </plugin>
+            </plugins>
         </pluginManagement>
     </build>
-    
+
     <repositories>
         <repository>
             <id>hampelratte</id>
