@@ -2,9 +2,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
-        <artifactId>master</artifactId>
+        <artifactId>parent</artifactId>
         <groupId>org.hampelratte</groupId>
-        <version>8</version>
+        <version>9</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -303,9 +303,14 @@
 
     <repositories>
         <repository>
-            <id>hampelratte</id>
+            <id>public-proxy</id>
             <name>hampelratte.org</name>
-            <url>http://www.hampelratte.org/maven</url>
+            <url>http://www.hampelratte.org/nexus/content/groups/releases</url>
+        </repository>
+        <repository>
+            <id>public-snapshots-proxy</id>
+            <name>hampelratte.org</name>
+            <url>http://www.hampelratte.org/nexus/content/groups/snapshots</url>
         </repository>
     </repositories>
 </project>
